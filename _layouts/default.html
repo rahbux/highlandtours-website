@@ -5,7 +5,21 @@
   <div id="page">
     {% include nav.html %}
 
-    {{ content }}
+    {% if page.header_image %}
+      <div class="page-image" style="background-image:url({{ page.header_image | relative}})">
+        <h1>{{ page.title }}</h1>
+      </div>
+    {% endif %}
+
+    <div class="container">
+      <div class="col">
+        {% unless page.header_image %}
+         <h1 class="text-center">{{ page.title }}</h1>
+        {% endunless %}
+
+        {{ content }}
+      </div>
+    </div>
   </div>
 
   {% include footer.html %}

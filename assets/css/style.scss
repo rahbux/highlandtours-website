@@ -83,3 +83,17 @@ body {
     text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
   }
 }
+
+.gallery {
+  .card{
+    overflow: hidden;
+    border: none;
+
+    img {
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

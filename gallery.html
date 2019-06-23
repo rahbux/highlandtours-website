@@ -1,0 +1,15 @@
+---
+layout: default
+permalink: /gallery
+title: Gallery
+header_image: /assets/images/durmitor-national-park-montenegro.jpg
+---
+
+<div class="card-columns gallery">
+  {% for image in site.data.gallery %}
+    <div class="card">
+      <img src="/assets/images/gallery/{{ image.image }}-t.jpg" class="card-img-top" alt="{{ image.caption }}">
+    </div>
+  {% endfor %}
+</div>
+

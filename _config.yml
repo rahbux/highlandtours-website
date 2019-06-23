@@ -36,12 +36,16 @@ twitter:
 navigation:
   - text: Home
     url: '/'
-  - text: About
-    url: '/'
+  - text: Durmitor
+    url: '/durmitor'
+  - text: Packages
+    url: '/packages'
+  - text: Activities
+    url: '/activities'
+  - text: Gallery
+    url: '/gallery'
   - text: Contact
-    url: '/'
-  - text: Blog
-    url: '/'
+    url: '/contact'
 
 # Hack to define empty array for Jekyll: https://github.com/jekyll/jekyll/issues/3246#issuecomment-68398379
 emptyArray: []
