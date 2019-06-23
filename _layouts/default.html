@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body{% if page.page_id != null %} id="{{ page.page_id }}"{% endif %}>
+  <div id="page">
+    {% include nav.html %}
+
+    {{ content }}
+  </div>
+
+  {% include footer.html %}
+  {% include analytics.html %}
+</body>
+</html>

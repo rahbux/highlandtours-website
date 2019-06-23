@@ -1,0 +1,61 @@
+title: Highland Tours
+email: hello@highlandtours.me
+description: >
+  TODO
+baseurl: ""
+url: ""
+repository: rahbux/highlandtours-website
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  enable_coderay: false
+  parse_block_html: true
+  math_engine: mathjax # Forced Default from GH Pages
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  style: compressed
+permalink: /blog/:year-:month-:day--:title:output_ext
+
+excerpt_separator: '<!-- more -->'
+
+twitter:
+  card: summary_large_image
+
+# Navigation
+navigation:
+  - text: Home
+    url: '/'
+  - text: About
+    url: '/'
+  - text: Contact
+    url: '/'
+  - text: Blog
+    url: '/'
+
+# Hack to define empty array for Jekyll: https://github.com/jekyll/jekyll/issues/3246#issuecomment-68398379
+emptyArray: []
+
+# Hide futures posts - GH shows them!
+future: false
+
+# CANNOT CHANGE THESE
+lsi: false
+safe: true
+source: ""
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+# kramdown:
+#   math_engine: mathjax
